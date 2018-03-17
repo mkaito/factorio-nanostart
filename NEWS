@@ -1,0 +1,13 @@
+0.0.1
+
+Initial version.
+
+Generates nano emitters, constructor nanobots, and termite nanobots.
+
+Settings for number of emitters, and number of stacks of nanobots.
+
+0.0.2
+
+Added an option to equip generated items instead of inserting into main inventory.
+
+Handle the case where some quantities might be set to zero, say, if a player wants to start with termites but no constructors.

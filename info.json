@@ -1,0 +1,11 @@
+{
+  "name": "Nanostart",
+  "version": "0.0.2",
+  "title": "Nanostart",
+  "author": "mkaito",
+  "contact": "",
+  "homepage": "",
+  "factorio_version": "0.16",
+  "dependencies": ["base >= 0.15", "Nanobots >= 1.8.6"],
+  "description": "A starter kit that provides a configurable amount of nanobots, meant to be used in conjunction with other starter kits that provide other items."
+}
