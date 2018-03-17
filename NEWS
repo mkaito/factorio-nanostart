@@ -11,3 +11,7 @@ Settings for number of emitters, and number of stacks of nanobots.
 Added an option to equip generated items instead of inserting into main inventory.
 
 Handle the case where some quantities might be set to zero, say, if a player wants to start with termites but no constructors.
+
+0.0.3
+
+Update for Factorio 0.16
