@@ -16,26 +16,36 @@ script.on_event(defines.events.on_player_created, function(event)
   end
 
   if equip then
-    if constructors > 100 and termites > 100 then
-      if emitters >= 1 then
-        guns.insert("gun-nano-emitter")
-      end
+    if emitters >= 1 then
+      guns.insert("gun-nano-emitter")
+    end
 
+    if constructors > 0 then
       player.insert{ name="ammo-nano-constructors", count = constructors }
+    end
 
-      if emitters >= 2 then
-        guns.insert("gun-nano-emitter")
-      end
+    if emitters >= 2 then
+      guns.insert("gun-nano-emitter")
+    end
 
+    if termites > 0 then
       player.insert{ name="ammo-nano-termites", count = termites }
+    end
 
-      if emitters >= 3 then
-        player.insert{ name = "gun-nano-emitter", count = (emitters - 2) }
-      end
+    if emitters >= 3 then
+      player.insert{ name = "gun-nano-emitter", count = (emitters - 2) }
     end
   else
-    player.insert{ name="ammo-nano-termites", count = termites }
-    player.insert{ name="ammo-nano-constructors", count = constructors }
-    player.insert{ name="gun-nano-emitter", count = emitters }
+    if termites > 0 then
+      player.insert{ name="ammo-nano-termites", count = termites }
+    end
+
+    if constructors > 0 then
+      player.insert{ name="ammo-nano-constructors", count = constructors }
+    end
+
+    if emitters > 0 then
+      player.insert{ name="gun-nano-emitter", count = emitters }
+    end
   end
 end)
