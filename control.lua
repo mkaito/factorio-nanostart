@@ -1,6 +1,6 @@
 script.on_event(defines.events.on_player_created, function(event)
   local player = game.players[event.player_index]
-  local guns = player.get_inventory(defines.inventory.player_guns)
+  local guns = player.get_inventory(defines.inventory.character_guns)
 
   local equip = settings.get_player_settings(game.players[event.player_index])["nanostart-equip"].value
   local emitters = settings.get_player_settings(game.players[event.player_index])["nanostart-emitters"].value
